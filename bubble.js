@@ -1,4 +1,4 @@
-Class Bubble{
+class Bubble{
 
   constructor(position){
     this.acc = createVector(-0.005,-0.004);

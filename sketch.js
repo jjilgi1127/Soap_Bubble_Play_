@@ -1,8 +1,8 @@
 let bubbleSystem;
 
 function setup(){
-  creatCanvas(600,400);
-  bubbleSystem = new bubbleSystem(createVector(width/2,50));
+  createCanvas(600,400);
+  bubbleSystem = new BubbleSystem(createVector(width/2,50));
 }
 
 function draw(){
