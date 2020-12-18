@@ -1,9 +1,9 @@
 class Bubble{
 
   constructor(position){
-    this.acc = createVector(-0.005,-0.004);
-    this.vel = createVector(random(-0.001,0), random(0,0.001));
-    this.pos = position.copy();
+    this.acceleration = createVector(0,0.15);
+    this.velocity = createVector(random(-2,2), random(-2,0));
+    this.position = position.copy();
   }
 
   fly(){
@@ -12,16 +12,16 @@ class Bubble{
   }
 
   update(){
-    this.vel.add(this.acc);
-    this.pos.add(this.vel);
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
 
     this.contactEdge();
   }
 
   contactEdge(){
-    if(this.pos.y > height){
-      this.vel.y *= -1;
-      this.pos.y = height;
+    if(this.position.y > height){
+      this.velocity.y *= -1;
+      this.position.y = height;
     }
   }
   blow(){

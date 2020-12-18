@@ -11,7 +11,7 @@ class BubbleSystem {
       this.bubbles.push(new Bubble(this.origin));
     } else {
 
-      this.bubbles.push(new Line(this.origin));
+      this.bubbles.push(new dust(this.origin));
     }
   }
 
