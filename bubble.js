@@ -39,7 +39,7 @@ class Bubble{
     ellipse(this.position.x,this.position.y,a,a);
   }
 
-   punk() {
+   burst() {
     if (this.position.y < 30) {
       return true;
     } else {
