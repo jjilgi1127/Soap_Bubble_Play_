@@ -20,7 +20,7 @@ class Bubble{
   }
 
   contactEdge() {
-    if (this.position.y < 0) {
+    if (this.position.y < 30) {
       this.velocity.y *= -0.7;
       this.w = 40;
       this.c = color(random(100, 200), random(100, 200), random(100, 200));
@@ -40,7 +40,7 @@ class Bubble{
   }
 
    punk() {
-    if (this.position.y < 0) {
+    if (this.position.y < 30) {
       return true;
     } else {
       return false;
