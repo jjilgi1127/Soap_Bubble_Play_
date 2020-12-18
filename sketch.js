@@ -7,11 +7,11 @@ function setup(){
 
 function draw(){
   background(149,219,255);
-  bubbleSystem.blow();
+  bubbleSystem.fly();
 }
 
 function mouseDragged(e){
   bubbleSystem.origin = createVector(500,300);
-  bubbleSystem.addbubble();
+  bubbleSystem.addBubble();
   return false;
 }

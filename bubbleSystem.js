@@ -5,19 +5,18 @@ class BubbleSystem {
     this.bubbles = [];
   }
 
-  addbubble() {
+  addBubble() {
     let r = random(1);
     if (r < 0.5) {
       this.bubbles.push(new Bubble(this.origin));
     } else {
-
-      this.bubbles.push(new dust(this.origin));
+      this.bubbles.push(new Confetti(this.origin));
+      this.bubbles.push(new Dust(this.origin));
     }
   }
-
-  blow() {
+  fly() {
     for (let bubble of this.bubbles) {
-      bubble.blow();
+      bubble.fly();
     }
   }
 }

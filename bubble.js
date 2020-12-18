@@ -27,7 +27,7 @@ class Bubble{
   blow(){
     noStroke();
     fill(255,80);
-    ellipse(500,300,random(30,70));
+    ellipse(this.position.x,this.position.y,random(30,70));
   }
 
 }

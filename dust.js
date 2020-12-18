@@ -1,4 +1,4 @@
-class dust extends Bubble{
+class Dust extends Bubble{
 
   constructor(position){
 
