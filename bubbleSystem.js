@@ -10,13 +10,13 @@ class BubbleSystem {
     if (r < 0.5) {
       this.bubbles.push(new Bubble(this.origin));
     } else {
-      this.bubbles.push(new Confetti(this.origin));
-      this.bubbles.push(new Dust(this.origin));
+      this.bubbles.push(new Bubble50(this.origin));
     }
   }
   fly() {
     for (let bubble of this.bubbles) {
       bubble.fly();
     }
+    this.bubbles = this.bubbles.filter(bubble =>!bubble.punk());
   }
 }
