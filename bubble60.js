@@ -1,4 +1,3 @@
-
 class Bubble60 extends Bubble{
 
   constructor(position){

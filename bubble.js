@@ -1,4 +1,3 @@
-let a = 70;
 class Bubble{
   constructor(position){
     this.acceleration = createVector(random(-0.09,0),random(-0.07,0));
@@ -24,13 +23,15 @@ class Bubble{
       let tones = ["C3","E3", "G3", "C4", "E4", "G4", "C6", "D6", "E6"];
       this.synth.triggerAttack(tones[floor(random(9))]);
       this.synth.triggerRelease(random(0.1, 0.8));
+
+
     }
   }
 
   blow(){
     noStroke();
     fill(255,80);
-    ellipse(this.position.x,this.position.y,a,a);
+    ellipse(this.position.x,this.position.y,70,70);
   }
 
    pop() {
