@@ -15,5 +15,4 @@ function draw(){
 function mousePressed(){
   bubbleSystem.origin = createVector(500,300);
   bubbleSystem.addBubble();
-  return false;
 }

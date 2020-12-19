@@ -17,6 +17,6 @@ class BubbleSystem {
     for (let bubble of this.bubbles) {
       bubble.fly();
     }
-    this.bubbles = this.bubbles.filter(bubble =>!bubble.punk());
+    this.bubbles = this.bubbles.filter(bubble =>!bubble.pop());
   }
 }
