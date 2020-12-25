@@ -9,7 +9,7 @@ class BubbleSystem {
     let r = random(1);
     if (r < 0.6) {
       this.bubbles.push(new Bubble(this.origin));
-    } else {
+    } else { 
       this.bubbles.push(new Bubble50(this.origin));
       this.bubbles.push(new Bubble60(this.origin));
     }
@@ -20,5 +20,4 @@ class BubbleSystem {
     }
     this.bubbles = this.bubbles.filter(bubble =>!bubble.pop());
   }
-
 }

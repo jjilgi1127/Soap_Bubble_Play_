@@ -1,9 +1,10 @@
+
 class Bubble50 extends Bubble{
 
   constructor(position){
    super(position);
   }
-
+  
   blow(display){
     noStroke();
     fill(0,153,255,80);

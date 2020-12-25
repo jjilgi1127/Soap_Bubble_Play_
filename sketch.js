@@ -7,7 +7,7 @@ function setup(){
   tool = new Tool();
     bubbleSystem = new BubbleSystem(createVector(width/2,50));
 
-
+  
 }
 
 function draw(){
